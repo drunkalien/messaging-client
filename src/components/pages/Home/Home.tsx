@@ -4,7 +4,7 @@ import { Form } from "react-bootstrap";
 import axios from "axios";
 
 import { user } from "../../../store/user";
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://messaging-server-itransition.herokuapp.com/";
 
 const Home = () => {
   const { from: username, setFrom: setUsername } = useSnapshot(user);

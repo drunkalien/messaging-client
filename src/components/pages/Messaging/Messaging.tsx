@@ -25,7 +25,7 @@ const Messaging = () => {
   const [selectedUsers, setSelectedUsers] = useState<MultiValue<string>>([]);
   const [incoming, setIncoming] = useState<MessageType[]>([]);
   const { from } = useSnapshot(user);
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://messaging-server-itransition.herokuapp.com/";
 
   function handleSend(e: any) {
     e.preventDefault();
